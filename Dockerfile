@@ -1,5 +1,5 @@
-FROM lsiobase/ubuntu:bionic
-
+#FROM lsiobase/ubuntu:arm32v7-bionic
+FROM https://github.com/lostintheunderflow/docker-transmission-openvpn.git#master
 # set version label
 ARG BUILD_DATE
 ARG VERSION
@@ -8,8 +8,8 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 LABEL maintainer="sparklyballs"
 
 # arch settings, uncomment as neccesary
-ARG JACKETT_ARCH="LinuxAMDx64"
-# ARG JACKETT_ARCH="LinuxARM32"
+# ARG JACKETT_ARCH="LinuxAMDx64"
+ARG JACKETT_ARCH="LinuxARM32"
 # ARG JACKETT_ARCH="LinuxARM64"
 
 # environment settings
