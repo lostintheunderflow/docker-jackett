@@ -53,5 +53,4 @@ COPY root/ /
 # ports and volumes
 VOLUME /config /downloads
 EXPOSE 9117
-CMD ["/etc/openvpn/start.sh"]
-CMD ["/app/Jackett/jackett"]
+CMD ["dumb-init", "/etc/all_cmds.sh"]
