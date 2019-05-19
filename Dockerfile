@@ -22,7 +22,7 @@ RUN \
  apt-get update && \
  apt-get install -y \
 	jq \
-	libicu60 \
+	libicu-dev \
 	libssl1.0 \
 	wget && \
  echo "**** install jackett ****" && \
