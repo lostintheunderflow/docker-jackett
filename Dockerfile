@@ -1,5 +1,5 @@
 #FROM lsiobase/ubuntu:arm32v7-bionic
-FROM https://github.com/lostintheunderflow/docker-transmission-openvpn.git#master
+FROM https://github.com/lostintheunderflow/docker-transmission-openvpn.git#dev
 # set version label
 ARG BUILD_DATE
 ARG VERSION
