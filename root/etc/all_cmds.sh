@@ -1,6 +1,7 @@
 #!/bin/bash
-echo openvpn
-/etc/openvpn/start.sh 
 echo jackett
-/app/Jackett/jackett 
+/app/Jackett/jackett &
+echo openvpn
+/etc/openvpn/start.sh &
+
 
